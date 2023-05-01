@@ -1,6 +1,7 @@
 import React from 'react'
 import Search from './Search'
 import SongItem from './SongItem'
+import Search from './Search'
 
 const Playlist = ({playList, setPlayList}) => {
   return (
@@ -13,4 +14,4 @@ const Playlist = ({playList, setPlayList}) => {
   )
 }
 
-export default Playlist
+export default Playlist;
