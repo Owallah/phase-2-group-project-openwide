@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import { Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 import About from './components/About'
 import Playlist from './components/Playlist'
@@ -25,9 +25,11 @@ function App() {
   return (
     <>
     <Navigation />
-    <Home />
-    <Playlist playList={playList} setPlayList={setPlayList} />
-    <About />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/playlist' element={<Playlist playList={playList} setPlayList={setPlayList} />} />
+      <Route path='/about' element={<About />} />
+    </Routes>
     </>
   )
 }
