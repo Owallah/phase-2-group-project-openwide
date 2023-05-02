@@ -18,7 +18,7 @@ const Search = ({ playlist, setFilteredPlaylist }) => {
     );
     setFilteredPlaylist(filteredPlaylist);
   };
-
+//it renders
   return (
     <div>
       <input type="text" value={searchTerm} onChange={handleInputChange} placeholder="Tafuta nyimbo" />
@@ -29,7 +29,7 @@ const Search = ({ playlist, setFilteredPlaylist }) => {
         <option value="uNm">uNm</option>
         <option value="Text">Text</option>
       </select>
-      <button onClick={handleSearchClick}>Search</button>
+      <button onClick={handleSearchClick}>Searching</button>
     </div>
   );
 };
