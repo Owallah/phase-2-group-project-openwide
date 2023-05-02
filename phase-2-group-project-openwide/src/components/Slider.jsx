@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Slider from './Slider.scss';
 
 const Slider = () => {
     const images = [
