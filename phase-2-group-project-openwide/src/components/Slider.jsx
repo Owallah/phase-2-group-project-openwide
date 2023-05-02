@@ -1,101 +1,77 @@
-import styled from "styled-components";
+import React, {useState} from 'react';
 
-const NetflixCard = ({actualData}) => {
-    const {jawSummary} = actualData;
-    return (
-        <Wrapper>
-            <div className="container">
-                <div className="wrapper">
-                    <div className="banner-image">
-                        <figure>
-                            <img src={jawSummary.backgroundImage.url} alt={jawSummary.title}/>
-                        </figure>
-                    </div>
-                    <h1>{jawSummary.title}</h1>
-                    <p>{jawSummary.synopsis}</p>
-                </div>
-            </div>
+const Slider = () => {
+    const images = [
+        "https://www.youtube.com/watch?v=Wc9m5TrV0TU",
+        "https://www.youtube.com/watch?v=iXmqYW-dSAk",
+        "https://i.ytimg.com/vi/m4JTJPC6C6A/default.jpg",
+        "https://i.ytimg.com/vi/nik91HjRchI/default.jpg",
+        "https://i.ytimg.com/vi/PTVbju240Zc/default.jpg",
+        "https://i.ytimg.com/vi/YYOyT_mwgsc/default.jpg",
+        "https://i.ytimg.com/vi/H9UIdlXhrBQ/default.jpg",
+        "https://i.ytimg.com/vi/M2fzZRXeplw/default.jpg",
+        "https://i.ytimg.com/vi/nwuL5D-UCoE/default.jpg",
+        "https://i.ytimg.com/vi/WhQHf1GJhRk/default.jpg",
+        "https://i.ytimg.com/vi/73g9VTJZJhA/default.jpg",
+        "https://i.ytimg.com/vi/GrDpPw6LfKM/default.jpg",
+        "https://i.ytimg.com/vi/q1e9hQXXOuc/default.jpg",
+        "https://i.ytimg.com/vi/pdT9ulYf7qU/default.jpg",
+        "https://i.ytimg.com/vi/DccmKKnizFY/default.jpg",
+        "https://i.ytimg.com/vi/EDK9KOfknTw/default.jpg",
+        "https://i.ytimg.com/vi/Z5NoQg8LdDk/default.jpg",
+        "https://i.ytimg.com/vi/DVG1_x7ph9k/default.jpg",
+        "https://i.ytimg.com/vi/UALDtSFiUos/default.jpg",
+        "https://i.ytimg.com/vi/oJ4rTHHZyv0/default.jpg",
+        "https://i.ytimg.com/vi/2SX8mpLvEC4/default.jpg",
+        "https://i.ytimg.com/vi/noJ2H19Qh8A/default.jpg",
+        "https://i.ytimg.com/vi/YVJ0ZKYu-GI/default.jpg",
+        "https://i.ytimg.com/vi/5P07yWoBaVo/default.jpg",
+        "https://i.ytimg.com/vi/Yh6YnsfAsOQ/default.jpg",
+        "https://i.ytimg.com/vi/QLLzECi0BK4/default.jpg",
+        "https://i.ytimg.com/vi/rR1daZboH5Y/default.jpg",
+        "https://i.ytimg.com/vi/RPsFtpdUa9E/default.jpg",
+        "https://i.ytimg.com/vi/baai5F0bv3s/default.jpg",
+        "https://i.ytimg.com/vi/oLV1-cY2hLU/default.jpg",
+        "https://i.ytimg.com/vi/EMG5vBzXQlU/default.jpg",
+        "https://i.ytimg.com/vi/jMwQcl7uIRc/default.jpg",
+        "https://i.ytimg.com/vi/QWHwny-RB0Q/default.jpg",
+        "https://i.ytimg.com/vi/wzadPklQwuQ/default.jpg",
+        "https://i.ytimg.com/vi/PMPYxr6fOs0/default.jpg",
+        "https://i.ytimg.com/vi/sdaOtnuw-Ew/default.jpg",
+        "https://i.ytimg.com/vi/VpCCiSLquRA/default.jpg",
+        "https://i.ytimg.com/vi/XsGl-0pzEEc/default.jpg",
+        "https://i.ytimg.com/vi/zWd__w5UWVc/default.jpg",
+    ]
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-        </Wrapper>
-    );
+  const nextSlide = () => {
+    const nextIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(nextIndex);
+  };
+
+  const prevSlide = () => {
+    const prevIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+    setCurrentIndex(prevIndex);
+  };
+
+  return (
+    <div className="slider-container">
+      <div className="slider">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`slide ${currentIndex === index ? 'active' : ''}`}
+            style={{ backgroundImage: `url(${image})` }}
+          ></div>
+        ))}
+      </div>
+      <div className="buttons">
+        <button onClick={prevSlide}>Prev</button>
+        <button onClick={nextSlide}>Next</button>
+      </div>
+    </div>
+  );
 };
 
-export default NetflixCard;
+export default Slider;
 
-const Wrapper = styled.section`
-  
-  padding: 3rem;
-  font-family: "Lexend Deca Light";
-  .container {
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.25);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    padding: 38px;
-    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    text-align: center;
-  }
-  .wrapper {
-    width: 100%;
-    height: 100%;
-  }
-  .banner-image {
-    height:auto;
-    width: 100%;
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255, 0.255)
-    overflow:hidden;
-    
-    img{
-      width: 100%;
-      height: auto;
-    }
-  }
-  
-  
-  h1{
-    color: rgba(255,255,255,0.98);
-    text-transform: uppercase;
-    font-size: 2.4rem;
-  }
-  p {
-    color: #fff;
-    text-align: center;
-    font-size: 1rem;
-    line-height: 150%;
-    letter-spacing: 2px;    
-  }
-  .button-wrapper{
-    margin-top: 18px;
-  }
-  .outline {
-    background: transparent;
-    color: rgba(0, 212, 255, 0.9);
-    border: 1px solid rgba(0, 212, 255, 0.6);
-    transition: all .3s ease;
-  }
-  .outline:hover{
-    transform: scale(1.125);
-    color: rgba(255, 255, 255, 0.9);
-    border-color: rgba(255, 255, 255, 0.9);
-    transition: all .3s ease;
-  }
-  .fill {
-    background: rgba(0, 212, 255, 0.9);
-    color: rgba(255,255,255,0.95);
-    filter: drop-shadow(0);
-    font-weight: bold;
-    transition: all .3s ease;
-  }
-  .fill:hover{
-    transform: scale(1.125);
-    border-color: rgba(255, 255, 255, 0.9);
-    filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
-    transition: all .3s ease;
-  }
-  `
