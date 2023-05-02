@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SongItem = ({song}) => {
+function Playlist({ playList }) {
   return (
     <div>
       <h2>SongItem</h2>
@@ -8,4 +8,4 @@ const SongItem = ({song}) => {
   )
 }
 
-export default SongItem
+export default Playlist
