@@ -5,6 +5,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Playlist from './components/Playlist'
 import Navigation from './components/Navigation'
+import SongItem from './components/SongItem'
 
 function App() {
   const [playList, setPlayList] = useState([])
@@ -29,6 +30,8 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/playlist' element={<Playlist playList={playList} setPlayList={setPlayList} />} />
       <Route path='/about' element={<About />} />
+      <Route path='/song/:id' element={<SongItem />} />
+      
     </Routes>
     </>
   )
