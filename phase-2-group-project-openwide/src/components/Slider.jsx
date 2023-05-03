@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import Slider from './Slider.scss';
+import './Slider.css';
 
-const Slider = () => {
+const SongSlider = () => {
     const images = [
-        "https://www.youtube.com/watch?v=Wc9m5TrV0TU",
-        "https://www.youtube.com/watch?v=iXmqYW-dSAk",
+        // "https://www.youtube.com/watch?v=Wc9m5TrV0TU",
+        // "https://www.youtube.com/watch?v=iXmqYW-dSAk",
         "https://i.ytimg.com/vi/m4JTJPC6C6A/default.jpg",
         "https://i.ytimg.com/vi/nik91HjRchI/default.jpg",
         "https://i.ytimg.com/vi/PTVbju240Zc/default.jpg",
@@ -74,5 +74,5 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default SongSlider;
 
