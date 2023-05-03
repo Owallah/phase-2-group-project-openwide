@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 const Search = ({ playlist, setFilteredPlaylist }) => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [searchCategory, setSearchCategory] = useState('');
+  const [searchTerm, setSearchTerm] = useState('')
+  const [searchCategory, setSearchCategory] = useState('')
 
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
@@ -22,7 +22,7 @@ const Search = ({ playlist, setFilteredPlaylist }) => {
     });
     setFilteredPlaylist(filteredPlaylist);
   };
-
+  
   return (
     <div>
       <input type="text" value={searchTerm} onChange={handleInputChange} placeholder="Tafuta nyimbo" />

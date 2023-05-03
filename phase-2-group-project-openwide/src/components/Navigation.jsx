@@ -12,7 +12,13 @@ const Navigation = () => {
             <li><NavLink to={'/playlist'} >Playlist</NavLink></li>
             <li><NavLink to={'/about'} >About</NavLink></li>
         </ul>
-        
+            <div className="container">
+              <label id='toggle-dark-theme'>Toggle Dark Theme</label>
+              <input id="checkbox" name="checkbox" type="checkbox" />
+            < label className="label" htmlFor="checkbox"></label>
+            </div>
+
+
         
         
     </nav>

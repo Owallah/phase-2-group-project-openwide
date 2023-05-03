@@ -6,9 +6,10 @@ import About from './components/About'
 import Playlist from './components/Playlist'
 import Navigation from './components/Navigation'
 
+
 function App() {
   const [playList, setPlayList] = useState([])
-  const url = 'https://cors.iamnd.eu.org/?url=https://openwhyd.org/adrien?format=json&limit=300'
+  const url = 'https://api.allorigins.win/raw?url=https://openwhyd.org/adrien?format=json&limit=300'
 
   useEffect(() => {
     fetch(url)
@@ -18,8 +19,8 @@ function App() {
       }
       return Promise.reject(response)
     })
-    .then(result => setPlayList(result))
-    .catch(error => console.error(`An error occurred ${error.message}`))
+    .then(result => {setPlayList(result)})
+    // .catch(error => console.error(`An error occurred ${error.message}`))
   }, [])
   
   return (
@@ -29,6 +30,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/playlist' element={<Playlist playList={playList} setPlayList={setPlayList} />} />
       <Route path='/about' element={<About />} />
+      
     </Routes>
     </>
   )
