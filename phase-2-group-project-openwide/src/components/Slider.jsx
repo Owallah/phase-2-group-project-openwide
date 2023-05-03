@@ -1,39 +1,29 @@
-import React, {useState} from 'react';
-import './Slider.css';
+import React, {useEffect} from 'react';
 
-const Slider = ({ images }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+useEffect(() => {
+  fetch('url')
+    .then(response => response.json())
+    .then(data => setPlaylist(data.results));
+}, []);
 
-  const nextSlide = () => {
-    setCurrentIndex((currentIndex + 1) % images.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((currentIndex + images.length - 1) % images.length);
-  };
-
-  return (
-    <div className="slider-container">
-      <div className="slider">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`slide ${currentIndex === index ? 'active' : ''}`}
-            style={{ backgroundImage: `url(${image})` }}
-          ></div>
-        ))}
-      </div>
-      <div className="buttons">
-        <button onClick={prevSlide}>Prev</button>
-        <button onClick={nextSlide}>Next</button>
-      </div>
-    </div>
-  );
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000
 };
 
-
-
- 
+    <Slider {...settings}>
+              {playlist.map(playlist => (
+                <div key={playlist.id} className="slider-item">
+                  <img src={playlist.background_image} alt={playlist.name} />
+                  <h3>{playlist.name}</h3>
+                </div>
+              ))}
+  </Slider>
 
 export default Slider;
 
