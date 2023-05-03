@@ -25,7 +25,7 @@ const Search = ({ playlist, setFilteredPlaylist }) => {
       <select value={searchCategory} onChange={handleCategoryChange}>
         <option value="id">id</option>
         <option value="name">Name</option>
-        <option value="uNm">uNm</option>
+        <option value="uNm">Artist</option>
         <option value="Text">Text</option>
       </select>
       <button onClick={handleSearchClick}>Search</button>
