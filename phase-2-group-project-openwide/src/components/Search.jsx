@@ -2,20 +2,24 @@ import React, { useState } from 'react';
 
 const Search = ({ playlist, setFilteredPlaylist }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [searchCategory, setSearchCategory] = useState('');
 
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
   };
 
   const handleCategoryChange = (event) => {
-    searchCategory(event.target.value);
+    setSearchCategory(event.target.value);
   };
 
   const handleSearchClick = () => {
-    const filteredPlaylist = playlist.filter(
-      (playlist) =>
-        playlist.category.toLowerCase().includes(searchCategory.toLowerCase())
-    );
+    const filteredPlaylist = playlist.filter((item) => {
+      if (searchCategory === '') {
+        return item.name.toLowerCase().includes(searchTerm.toLowerCase());
+      } else {
+        return item[searchCategory].toLowerCase().includes(searchTerm.toLowerCase());
+      }
+    });
     setFilteredPlaylist(filteredPlaylist);
   };
 
@@ -23,6 +27,7 @@ const Search = ({ playlist, setFilteredPlaylist }) => {
     <div>
       <input type="text" value={searchTerm} onChange={handleInputChange} placeholder="Tafuta nyimbo" />
       <select value={searchCategory} onChange={handleCategoryChange}>
+        <option value="">Filter</option>
         <option value="id">id</option>
         <option value="name">Name</option>
         <option value="uNm">Artist</option>
