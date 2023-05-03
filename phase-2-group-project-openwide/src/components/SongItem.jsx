@@ -10,7 +10,10 @@ function SongItem({ song }) {
           <audio controls>
             <source src={song.url} type="audio/mp3" />
           </audio>
-      </div>
+          {song.thumbnail && (
+        <img src={song.thumbnail.url} alt={song.name} />
+          )}
+    </div>
   )
 }
 
