@@ -220,6 +220,14 @@ button:focus-visible {
   display: flex;
 }
 
+.section-title {
+  font-size: 50px;
+  font-weight: 900;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #f25c00;
+  -webkit-text-fill-color: white;
+}
+
 .team-item {
  text-align: center;
  background: #e0e1dd;
@@ -255,6 +263,14 @@ button:focus-visible {
 
 .section-subtitle {
   white-space: pre-line;
+  font-weight: 600;
+}
+
+.section-subtitle span {
+  font-style: italic;
+  font-weight: 800;
+  text-transform: capitalize;
+  color: #f25c00;
 }
 
 .team-info {
@@ -349,5 +365,65 @@ ul.team-icons li a.linkedin {
  -ms-transition: all 0.25s ease-in-out;
  -o-transition: all 0.25s ease-in-out;
  transition: all 0.25s ease-in-out;
+}
+
+/* Playlist section */
+.playlists {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+/* Song Item section */
+.song-item {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  border: 1px solid #dedede;
+  margin:5px 2px;
+  border-radius: 8px;
+}
+
+.song-item img {
+  margin-right: 10px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.song-details {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.artist {
+  color: #f25c00;
+}
+
+.song-name {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.song-button-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.song-button-section a {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.song-button-section i {
+  font-size: 24px;
+  color: #757272;
+}
+
+.fa-heart {
+  color: #f25c00;
 }
 
