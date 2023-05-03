@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Search from './Searches';
+import Searches from './Searches';
 import SongItem from './SongItem';
 
 const Playlist = ({ playList, setPlaylist }) => {
@@ -19,7 +19,7 @@ const Playlist = ({ playList, setPlaylist }) => {
   return (
     <>
       <div className="playlist-search">
-        <Search handleSearch={handleSearch} />
+        <Searches handleSearch={handleSearch} />
         <button onClick={handleReset}>Reset</button>
       </div>
       {filteredPlaylist.length > 0 ? (
