@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import './Slider.css'
 
 const Search = ({ playlist, setFilteredPlaylist }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [searchCategory, setSearchCategory] = useState('');
 
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
@@ -12,10 +14,13 @@ const Search = ({ playlist, setFilteredPlaylist }) => {
   };
 
   const handleSearchClick = () => {
-    const filteredPlaylist = playlist.filter(
-      (playlist) =>
-        playlist.category.toLowerCase().includes(searchCategory.toLowerCase())
-    );
+    const filteredPlaylist = playlist.filter((item) => {
+      if (searchCategory === '') {
+        return item.name.toLowerCase().includes(searchTerm.toLowerCase());
+      } else {
+        return item[searchCategory].toLowerCase().includes(searchTerm.toLowerCase());
+      }
+    });
     setFilteredPlaylist(filteredPlaylist);
   };
 
