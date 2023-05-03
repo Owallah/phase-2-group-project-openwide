@@ -8,7 +8,7 @@ const Search = ({ playlist, setFilteredPlaylist }) => {
   };
 
   const handleCategoryChange = (event) => {
-    setSearchCategory(event.target.value);
+    searchCategory(event.target.value);
   };
 
   const handleSearchClick = () => {
@@ -23,7 +23,6 @@ const Search = ({ playlist, setFilteredPlaylist }) => {
     <div>
       <input type="text" value={searchTerm} onChange={handleInputChange} placeholder="Tafuta nyimbo" />
       <select value={searchCategory} onChange={handleCategoryChange}>
-        <option value="">Filter</option>
         <option value="id">id</option>
         <option value="name">Name</option>
         <option value="uNm">uNm</option>
