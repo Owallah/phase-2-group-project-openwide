@@ -25,7 +25,7 @@ const About = () => {
               <h3>Glory Nkatha</h3>
               <div className="team-info">
                 <p>Senior React Dev <br />Senior UI/UX Designer</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nobis, voluptate vel maiores voluptates culpa? Obcaecati provident similique consequuntur. </p>
+                <p>Meet Glory, a passionate young developer with a keen eye for design and a mastery of front-end development. <br /> With a toolbox full of cutting-edge technologies, she's fully equipped to take on any challenge and bring your website to life. <br /> From responsive layouts to dynamic animations, Glory's got you covered.</p>
 
                 <ul className="team-icons">
                   <li>
@@ -35,7 +35,7 @@ const About = () => {
                       </a>
                   </li>
                   <li>
-                  <a href="#" target='_blank' className='github'>
+                  <a href="https://github.com/Nkathaglow" target='_blank' className='github'>
                       <i className="fa fa-github">
                       </i>
                       </a>
@@ -97,7 +97,7 @@ const About = () => {
               <h3>Mohamed Salad</h3>
               <div className="team-info">
                 <p>Senior React Dev <br />Full Stack Software Engineer</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nobis, voluptate vel maiores voluptates culpa? Obcaecati provident similique consequuntur. </p>
+                <p>Meet Salad, a seasoned full-stack software engineer with a focus on React development. <br /> Salad is an expert in crafting scalable, performant, and user-friendly web applications using React, and he's equally comfortable working on both the front-end and back-end.</p>
 
                 <ul className="team-icons">
                   <li>
@@ -119,7 +119,7 @@ const About = () => {
                       </a>
                   </li>
                   <li>
-                  <a href="#" target='_blank' className='facebook'>
+                  <a href="https://www.facebook.com/profile.php?id=100060709951895&mibextid=LQQJ4d" target='_blank' className='facebook'>
                       <i className="fa fa-facebook">
                       </i>
                       </a>
