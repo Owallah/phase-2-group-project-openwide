@@ -94,7 +94,7 @@ const About = () => {
 
             <div className="team-item">
               <img className='team-img' src={salad} alt="Mohamed Salanka" />
-              <h3>Mohamed Salanka</h3>
+              <h3>Mohamed Salad</h3>
               <div className="team-info">
                 <p>Senior React Dev <br />Full Stack Software Engineer</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nobis, voluptate vel maiores voluptates culpa? Obcaecati provident similique consequuntur. </p>
