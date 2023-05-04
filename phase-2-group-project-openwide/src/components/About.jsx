@@ -97,7 +97,7 @@ const About = () => {
               <h3>Mohamed Salad</h3>
               <div className="team-info">
                 <p>Senior React Dev <br />Full Stack Software Engineer</p>
-                <p></p>
+                <p>As a person whose currently pursuing a Software Engineering course at Moringa School.I have a passion to be a well known full stack software Engineer. </p>
 
                 <ul className="team-icons">
                   <li>
