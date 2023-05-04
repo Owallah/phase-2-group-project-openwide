@@ -27,7 +27,7 @@ const images = [
     
 ];
 
-const Slides = () => {
+const Slider = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -57,4 +57,4 @@ const Slides = () => {
   );
 };
 
-export default Slides;
+export default Slider;
