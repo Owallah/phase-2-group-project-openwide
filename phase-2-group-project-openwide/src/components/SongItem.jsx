@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 function SongItem({ song }) {
   const [isLiked, setIsLiked] = useState(false);
-  console.log(song);
+
   const str = song.eId;
   const id = str.split("/").pop();
   
@@ -44,7 +44,7 @@ function SongItem({ song }) {
           )}
           <div className="song-details">
             <h4 className="artist">{firstPart}</h4>
-          <h5 className='song-name'>{song.name}</h5>
+            <h5 className='song-name'>{song.name}</h5>
           <div className="song-button-section">
             <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
             <a href="#" onClick={handleClick}><i class={iconClass} aria-hidden="true"></i></a>

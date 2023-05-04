@@ -37,7 +37,6 @@ const Home = () => {
         <blockquote>"Music can name the unnameable <br /> and communicate the unknowable.” <br /> <span> – Leonard Bernstein </span></blockquote>
       </div>
     </div>
-    <SongSlider />
     </>
   )
 }
