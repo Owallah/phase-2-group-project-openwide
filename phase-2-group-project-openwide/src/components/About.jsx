@@ -61,23 +61,23 @@ const About = () => {
               <h3>Brian Rono</h3>
               <div className="team-info">
                 <p>Full Stack <br /> Software Eng</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nobis, voluptate vel maiores voluptates culpa? Obcaecati provident similique consequuntur. </p>
+                <p>Here is <strong>Brian Rono</strong>, a highly interested and diverse individual with a passion for programming and staying updated with the latest technology trends. I thrive on innovation and constantly strive to push the boundaries of what's possible in software development</p>
 
                 <ul className="team-icons">
                   <li>
-                    <a href="#" target='_blank' className='twitter'>
+                    <a href="https://twitter.com/brian_kipkorir_" target='_blank' className='twitter'>
                       <i className="fa fa-twitter">
                       </i>
                       </a>
                   </li>
                   <li>
-                  <a href="#" target='_blank' className='github'>
+                  <a href="https://github.com/brianrono" target='_blank' className='github'>
                       <i className="fa fa-github">
                       </i>
                       </a>
                   </li>
                   <li>
-                  <a href="#" target='_blank' className='linkedin'>
+                  <a href="https://www.linkedin.com/in/brian-rono-915223113" target='_blank' className='linkedin'>
                       <i className="fa fa-linkedin">
                       </i>
                       </a>
