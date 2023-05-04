@@ -40,7 +40,7 @@ const Navigation = () => {
   return (
     <nav>
       <NavLink><img src={logo} alt='open wide' to={'/'} /></NavLink>
-      <NavLink className='site-title' to={'/'}>Open Wide</NavLink>
+      <NavLink className='site-title' to={'/'}>BeatRoute</NavLink>
       <ul>
         <li><NavLink to={'/'}>Home</NavLink></li>
         <li><NavLink to={'./playlist'}>Songs</NavLink></li>
