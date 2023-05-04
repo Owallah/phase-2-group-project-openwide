@@ -10,7 +10,7 @@ const SearchButton = ({ handleSearch }) => {
   const handleSearchClick = () => {
     handleSearch(searchTerm);
   };
-//props
+//wueh
   return (
     <div>
       <input type="text" value={searchTerm} onChange={handleInputChange} />
