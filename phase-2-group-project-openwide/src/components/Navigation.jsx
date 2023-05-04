@@ -9,7 +9,8 @@ const Navigation = () => {
         <NavLink className='site-title' to={'/'} >Open Wide</NavLink>
         <ul>
             <li><NavLink to={'/'} >Home</NavLink></li>
-            <li><NavLink to={'/playlist'} >Playlist</NavLink></li>
+            <li><NavLink to={'/playlist'} >Songs</NavLink></li>
+            <li><NavLink to={'/myplaylist'} >Playlist</NavLink></li>
             <li><NavLink to={'/about'} >About</NavLink></li>
         </ul>
             <div className="container">

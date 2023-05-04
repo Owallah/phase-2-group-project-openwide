@@ -3,7 +3,7 @@ import Search from './Searches';
 import SongItem from './SongItem';
 import Slider from './ImageSlider';
 
-const Playlist = ({ playList }) => {
+const Playlist = ({ playList, addToMyPlaylist }) => {
   const [filteredPlaylist, setFilteredPlaylist] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -34,7 +34,7 @@ const Playlist = ({ playList }) => {
       ) : filteredPlaylist.length > 0 ? (
         <div className="playlists">
           {filteredPlaylist.map((song) => (
-            <SongItem key={song.id} song={song} />
+            <SongItem key={song.id} song={song} addToMyPlaylist={addToMyPlaylist} inPlaylist={false} />
           ))}
         </div>
       ) : (

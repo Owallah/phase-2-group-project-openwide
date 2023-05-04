@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function SongItem({ song }) {
+function SongItem({ song, addToMyPlaylist, inPlaylist }) {
   const [isLiked, setIsLiked] = useState(false);
 
   const str = song.eId;
@@ -38,7 +38,7 @@ function SongItem({ song }) {
     };
     
   return (
-    <div className='song-item'>
+    <div key={song.id} className='song-item'>
           {song.img && (
         <img src={song.img} alt={song.name} />
           )}
@@ -46,10 +46,10 @@ function SongItem({ song }) {
             <h4 className="artist">{firstPart}</h4>
             <h5 className='song-name'>{song.name}</h5>
           <div className="song-button-section">
-            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
-            <a href="#" onClick={handleClick}><i class={iconClass} aria-hidden="true"></i></a>
-            <a href={`https://www.youtube.com/watch?v=${id}`} target='_blank'><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-            <a href="#" onClick={handleShare}><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+            <a href="#" onClick={() => addToMyPlaylist(song, inPlaylist)}><i className="fa fa-plus" aria-hidden="true"></i></a>
+            <a href="#" onClick={handleClick}><i className={iconClass} aria-hidden="true"></i></a>
+            <a href={`https://www.youtube.com/watch?v=${id}`} target='_blank'><i className="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a href="#" onClick={handleShare}><i className="fa fa-share-alt" aria-hidden="true"></i></a>
           </div>
           </div>
 
