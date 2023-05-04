@@ -3,7 +3,7 @@ import casssette from '../assets/cassette.jpg'
 import headphones from '../assets/headphones.jpg'
 import instruments from '../assets/instruments.jpg'
 import musiclibrary from '../assets/musiclibrary.jpg'
-import SongSlider from './Slider'
+import Slider from './ImageSlider'
 
 const Home = () => {
 
@@ -37,6 +37,7 @@ const Home = () => {
         <blockquote>&quot;Music can name the unnameable <br /> and communicate the unknowable.&quot; <br /> <span> – Leonard Bernstein </span></blockquote>
       </div>
     </div>
+    <Slider />
     </>
   )
 }

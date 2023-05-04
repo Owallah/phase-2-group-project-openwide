@@ -427,3 +427,43 @@ ul.team-icons li a.linkedin {
   color: #f25c00;
 }
 
+.slider-container {
+ display: flex;
+ overflow: auto;
+ scroll-snap-type: x mandatory;
+}
+
+.image-container {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  /* width: 200px;
+  height: 200px; */
+  margin: 2px;
+}
+
+.goto{
+  display: flex;
+
+}
+
+/* search input */
+.search-input {
+  border-radius: 8px;
+  border: 1px solid #f25c00;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  margin: 4px;
+}
+
+.search-input:hover {
+  font-size: 1.1em;
+}
+
