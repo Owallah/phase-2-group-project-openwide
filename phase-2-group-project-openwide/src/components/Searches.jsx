@@ -1,38 +1,23 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-const Search = ({ playlist, setFilteredPlaylist }) => {
+const SearchButton = ({ handleSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [searchCategory, setSearchCategory] = useState('')
-
+//monitor user input
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  const handleCategoryChange = (event) => {
-    setSearchCategory(event.target.value);
-  };
-
+  //handle search button click
   const handleSearchClick = () => {
-    const filteredPlaylist = playlist.filter(
-      (playlist) =>
-        playlist.category.toLowerCase().includes(searchCategory.toLowerCase())
-    );
-    setFilteredPlaylist(filteredPlaylist);
+    handleSearch(searchTerm);
   };
-  
+//wueh
   return (
     <div>
-      <input type="text" value={searchTerm} onChange={handleInputChange} placeholder="Tafuta nyimbo" />
-      <select value={searchCategory} onChange={handleCategoryChange}>
-        <option value="">Filter</option>
-        <option value="id">id</option>
-        <option value="name">Name</option>
-        <option value="uNm">Artist</option>
-        <option value="Text">Text</option>
-      </select>
+      <input type="text" value={searchTerm} onChange={handleInputChange} />
       <button onClick={handleSearchClick}>Search</button>
     </div>
   );
 };
 
-export default Search;
+export default SearchButton;
