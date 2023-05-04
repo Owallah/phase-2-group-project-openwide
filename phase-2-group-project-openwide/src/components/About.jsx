@@ -11,7 +11,7 @@ const About = () => {
         <div className="row">
           <div className="col-md-12 text-center">
             <h2 className="section-title">
-              The Awesome Team Behind Open Wide
+              The Awesome Team Behind BeatRoute
             </h2>
             <p className="section-subtitle">
               The ideation and realization of this project was brought to succes by: <br /> The members of <span id='group-name'>group 3</span>. <br />
@@ -29,25 +29,25 @@ const About = () => {
 
                 <ul className="team-icons">
                   <li>
-                    <a href="#" className='twitter'>
+                    <a href="#" target='_blank' className='twitter'>
                       <i className="fa fa-twitter">
                       </i>
                       </a>
                   </li>
                   <li>
-                  <a href="#" className='github'>
+                  <a href="#" target='_blank' className='github'>
                       <i className="fa fa-github">
                       </i>
                       </a>
                   </li>
                   <li>
-                  <a href="#" className='linkedin'>
+                  <a href="#" target='_blank' className='linkedin'>
                       <i className="fa fa-linkedin">
                       </i>
                       </a>
                   </li>
                   <li>
-                  <a href="#" className='facebook'>
+                  <a href="#" target='_blank' className='facebook'>
                       <i className="fa fa-facebook">
                       </i>
                       </a>
@@ -65,25 +65,25 @@ const About = () => {
 
                 <ul className="team-icons">
                   <li>
-                    <a href="#" className='twitter'>
+                    <a href="#" target='_blank' className='twitter'>
                       <i className="fa fa-twitter">
                       </i>
                       </a>
                   </li>
                   <li>
-                  <a href="#" className='github'>
+                  <a href="#" target='_blank' className='github'>
                       <i className="fa fa-github">
                       </i>
                       </a>
                   </li>
                   <li>
-                  <a href="#" className='linkedin'>
+                  <a href="#" target='_blank' className='linkedin'>
                       <i className="fa fa-linkedin">
                       </i>
                       </a>
                   </li>
                   <li>
-                  <a href="#" className='facebook'>
+                  <a href="#" target='_blank' className='facebook'>
                       <i className="fa fa-facebook">
                       </i>
                       </a>
@@ -101,25 +101,25 @@ const About = () => {
 
                 <ul className="team-icons">
                   <li>
-                    <a href="#" className='twitter'>
+                    <a href="#" target='_blank' className='twitter'>
                       <i className="fa fa-twitter">
                       </i>
                       </a>
                   </li>
                   <li>
-                  <a href="#" className='github'>
+                  <a href="#" target='_blank' className='github'>
                       <i className="fa fa-github">
                       </i>
                       </a>
                   </li>
                   <li>
-                  <a href="#" className='linkedin'>
+                  <a href="#" target='_blank' className='linkedin'>
                       <i className="fa fa-linkedin">
                       </i>
                       </a>
                   </li>
                   <li>
-                  <a href="#" className='facebook'>
+                  <a href="#" target='_blank' className='facebook'>
                       <i className="fa fa-facebook">
                       </i>
                       </a>
@@ -133,23 +133,23 @@ const About = () => {
               <h3>Michael Johnson</h3>
               <div className="team-info">
                 <p>Senior React Dev <br />Senior DevOps Engineer</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nobis, voluptate vel maiores voluptates culpa? Obcaecati provident similique consequuntur. </p>
+                <p>Johnson is a Computer Science graduate. He is a Mobile developer and currently pursuing a Software Engineering course at Moringa School</p>
 
                 <ul className="team-icons">
                   <li>
-                    <a href="#" className='twitter'>
+                    <a href="https://twitter.com/_michaelowallah" target='_blank' className='twitter'>
                       <i className="fa fa-twitter">
                       </i>
                       </a>
                   </li>
                   <li>
-                  <a href="#" className='github'>
+                  <a href="https://github.com/Owallah" target='_blank' className='github'>
                       <i className="fa fa-github">
                       </i>
                       </a>
                   </li>
                   <li>
-                  <a href="#" className='linkedin'>
+                  <a href="https://www.linkedin.com/in/michael-johnson-8a6a08176/" target='_blank' className='linkedin'>
                       <i className="fa fa-linkedin">
                       </i>
                       </a>
