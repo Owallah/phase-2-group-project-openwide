@@ -107,19 +107,19 @@ const About = () => {
                       </a>
                   </li>
                   <li>
-                  <a href="#" target='_blank' className='github'>
+                  <a href="https://github.com/mohasalanka" target='_blank' className='github'>
                       <i className="fa fa-github">
                       </i>
                       </a>
                   </li>
                   <li>
-                  <a href="#" target='_blank' className='linkedin'>
+                  <a href="linkedin.com/in/mohamed-salad-867066275" target='_blank' className='linkedin'>
                       <i className="fa fa-linkedin">
                       </i>
                       </a>
                   </li>
                   <li>
-                  <a href="#" target='_blank' className='facebook'>
+                  <a href="https://www.facebook.com/profile.php?id=100060709951895&mibextid=LQQJ4d" target='_blank' className='facebook'>
                       <i className="fa fa-facebook">
                       </i>
                       </a>
