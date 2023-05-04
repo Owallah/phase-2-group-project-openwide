@@ -97,7 +97,7 @@ const About = () => {
               <h3>Mohamed Salad</h3>
               <div className="team-info">
                 <p>Senior React Dev <br />Full Stack Software Engineer</p>
-                <p>Meet Salad, a seasoned full-stack software engineer with a focus on React development. <br /> Salad is an expert in crafting scalable, performant, and user-friendly web applications using React, and he's equally comfortable working on both the front-end and back-end.</p>
+                <p></p>
 
                 <ul className="team-icons">
                   <li>
