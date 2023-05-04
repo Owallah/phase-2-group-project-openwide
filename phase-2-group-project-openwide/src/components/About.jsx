@@ -25,7 +25,7 @@ const About = () => {
               <h3>Glory Nkatha</h3>
               <div className="team-info">
                 <p>Senior React Dev <br />Senior UI/UX Designer</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nobis, voluptate vel maiores voluptates culpa? Obcaecati provident similique consequuntur. </p>
+                <p>A determined young lady ready to work on your basic front-end needs according to your needs </p>
 
                 <ul className="team-icons">
                   <li>
