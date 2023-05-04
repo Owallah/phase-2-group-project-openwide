@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Search from './Search';
+import Search from './Searches';
 import SongItem from './SongItem';
 
 const Playlist = ({ playList }) => {
