@@ -3,6 +3,7 @@ import casssette from '../assets/cassette.jpg'
 import headphones from '../assets/headphones.jpg'
 import instruments from '../assets/instruments.jpg'
 import musiclibrary from '../assets/musiclibrary.jpg'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
@@ -14,8 +15,8 @@ const Home = () => {
       </div>
       <div className='text-side'>
         <h2>&apos;Where words fail <br /> <span>Music speaks</span>&apos;</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas non consectetur ratione totam praesentium. Dolore placeat reiciendis eaque possimus hic dolorem obcaecati sapiente debitis quas, tempora ea nesciunt eos aspernatur.</p>
-          <button id="text-side-button">Discover</button>
+        <p>One of the most remarkable things about music is its ability to bring people together. Whether it's through a shared love of a particular genre or a mutual appreciation for a particular artist, music has the power to create a sense of community and belonging. This is particularly evident at live concerts and festivals, where people from all walks of life come together to celebrate their shared love of music..</p>
+          <Link to = "./Playlist"><button id="text-side-button">Discover</button></Link>
       </div>
     </header>
     <div className="body-section">
