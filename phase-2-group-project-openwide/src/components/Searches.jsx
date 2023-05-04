@@ -14,7 +14,7 @@ const SearchButton = ({ handleSearch }) => {
 //wueh
   return (
     <div>
-      <input type="text" value={searchTerm} onChange={handleInputChange} />
+      <input className='search-input' placeholder='Search here...' type="text" value={searchTerm} onChange={handleInputChange} />
       <button onClick={handleSearchClick}>Search</button>
     </div>
   );

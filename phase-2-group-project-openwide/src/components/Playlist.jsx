@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Search from './Searches';
 import SongItem from './SongItem';
+import Slider from './ImageSlider';
 
 const Playlist = ({ playList, addToMyPlaylist }) => {
   const [filteredPlaylist, setFilteredPlaylist] = useState([]);
@@ -39,6 +40,7 @@ const Playlist = ({ playList, addToMyPlaylist }) => {
       ) : (
         <p>No matching playlists found.</p>
       )}
+      <Slider />
     </>
   );
 };
