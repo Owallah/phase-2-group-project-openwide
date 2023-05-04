@@ -16,7 +16,7 @@ Welcome to the Phase 2 Group Project - OpenWide readme! This project is a web ap
  - `SongItem.js`
 * `Contributing`
 
-# Technologies Used
+### Technologies Used
 
 * React
 + React Router
