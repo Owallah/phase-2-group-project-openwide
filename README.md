@@ -1,4 +1,4 @@
-## Phase 2 Group Project - OpenWide
+# [BeatRoute](https://owallah.github.io/phase-2-group-project-openwide/) 
 
 Welcome to the Phase 2 Group Project - OpenWide readme! This project is a web application that allows users to view and interact with a playlist of songs. This readme provides information on the different components of the project, as well as instructions on how to run the application.
 
@@ -30,8 +30,8 @@ To run the OpenWide web application, follow these steps:
 1. Clone this repository to your local machine.
 2. Open a terminal and navigate to the project directory.
 3. Run `npm install` to install the necessary dependencies.
-4. Run `npm start` to start the application.
-5. The application should now be running on http://localhost:3000/.
+4. Run `npm run dev` to start the application.
+5. The application should now be running on http://localhost:5173/.
 
 # Usage
 
@@ -76,7 +76,7 @@ If you wish to contribute to the OpenWide project, please fork the repository an
 - Michael Johnson 
 - Mohamed.A.Salad 
 - Brian Rono 
-- Glory Ngatha 
+- Glory Nkatha 
 
 
 
