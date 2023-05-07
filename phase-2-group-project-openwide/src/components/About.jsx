@@ -61,7 +61,7 @@ const About = () => {
               <h3>Brian Rono</h3>
               <div className="team-info">
                 <p>Full Stack <br /> Software Eng</p>
-                <p>Here is <strong>Brian Rono</strong>, a highly interested and diverse individual with a passion for programming and staying updated with the latest technology trends. I thrive on innovation and constantly strive to push the boundaries of what's possible in software development</p>
+                <p>Here is <strong>Brian Rono</strong>, a highly interested and diverse individual with a passion for programming and staying updated with the latest technology trends. He thrives on innovation and constantly strive to push the boundaries of what's possible in software development</p>
 
                 <ul className="team-icons">
                   <li>
